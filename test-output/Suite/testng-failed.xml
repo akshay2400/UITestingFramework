@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="classes" name="Test(failed)">
+    <classes>
+      <class name="testcases.TestFilters">
+        <methods>
+          <include name="testFilters"/>
+          <include name="teardown"/>
+          <include name="testSettingFilters" invocation-numbers="2"/>
+          <include name="testSearchItem"/>
+          <include name="testOpenSite"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testcases.TestFilters -->
+      <class name="runner.Testrunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- runner.Testrunner -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
